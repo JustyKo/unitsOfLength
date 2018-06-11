@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kalkulator jednostek długości</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container" class="box">
+        <h1>Kalkulator jednostek długości</h1>
+        <button id="exchange" class="exchange">&#128260;</button>
+        <select id="unitIn" class="boxUnitIn" name="unitinput">
+            <option value="metr">metr</option>
+            <option value="kilometr">kilometr</option>
+            <option value="decymetr">decymetr</option>
+            <option value="centymetr">centymetr</option>
+            <option value="milimetr">milimetr</option>
+            <option value="cal">cal</option>
+            <option value="stopa">stopa</option>
+            <option value="jard">jard</option>
+            <option value="mila">mila</option>
+        </select>
+
+        <select id="unitOut" class="boxUnitOut" name="unitoutput">
+            <option value="metr">metr</option>
+            <option value="kilometr">kilometr</option>
+            <option value="decymetr">decymetr</option>
+            <option value="centymetr">centymetr</option>
+            <option value="milimetr">milimetr</option>
+            <option value="cal">cal</option>
+            <option value="stopa">stopa</option>
+            <option value="jard">jard</option>
+            <option value="mila">mila</option>
+        </select>
+
+        <input id="valueIn" class="boxValueIn" type="text">
+
+        <div id="valueOut" class="boxValueOut">
+        </div>
+    </div>
+    <div class="info">
+        <h1>Projekt</h1>
+        <p>
+            Aplikacja w JavaScripcie i HTML umożliwia przeliczanie jednostek długości. Użytkownik ma możliwość wpisania liczby w polu
+            oraz wyboru dwóch jednostek – wejściowej i wyjściowej.
+        </p>
+        <ul>
+            <li>w trakcie wpisywania aplikacja automatycznie na bieżąco przelicza i wyświetla wynik</li>
+	    <li>klikając w przycisk &#128260; można odwrócić jednostki</li>
+            <li>wpisanie "bzdur" nie psuje aplikacji</li>
+        </ul>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
